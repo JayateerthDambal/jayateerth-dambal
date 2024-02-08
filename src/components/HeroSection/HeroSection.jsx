@@ -15,7 +15,7 @@ import {
   SubTitle,
   ResumeButton,
 } from "./HeroStyles";
-
+import { Box } from "@mui/material";
 import HeroImg from "../../images/HeroImg.png";
 import { useTheme } from "@emotion/react";
 import HeroBgAnimation from "./HeroBgAnimation";
@@ -39,7 +39,14 @@ const HeroSection = () => {
   };
 
   return (
-    <div id="about">
+    <Box
+      id="about"
+      sx={
+        {
+          // height: "90vh",
+        }
+      }
+    >
       <HeroContainer
         as={motion.div}
         initial="hidden"
@@ -91,7 +98,7 @@ const HeroSection = () => {
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
-    </div>
+    </Box>
   );
 };
 

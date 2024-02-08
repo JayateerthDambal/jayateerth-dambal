@@ -4,6 +4,7 @@ import { Box, Typography, Button } from "@mui/material";
 
 // HeroContainer
 export const HeroContainer = styled(Box)(({ theme }) => ({
+  height: "60vh",
   background:
     theme.palette.mode === "dark"
       ? theme.palette.background.default
@@ -27,7 +28,7 @@ export const HeroBg = styled(Box)({
   position: "absolute",
   display: "flex",
   justifyContent: "end",
-  top: "50%",
+  top: "60%",
   right: 0,
   bottom: 0,
   left: "50%",
@@ -35,7 +36,7 @@ export const HeroBg = styled(Box)({
   height: "100%",
   maxWidth: "1360px",
   overflow: "hidden",
-  padding: "0 30px",
+  padding: "10px 20px",
   transform: "translate(-50%, -50%)",
   "@media (max-width:960px)": {
     justifyContent: "center",
@@ -109,7 +110,7 @@ export const Img = styled("img")(({ theme }) => ({
 // Title
 export const Title = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
-  fontSize: "50px",
+  fontSize: "60px",
   color: theme.palette.text.primary,
   lineHeight: "68px",
   "@media (max-width:960px)": {
@@ -125,9 +126,9 @@ export const Title = styled(Typography)(({ theme }) => ({
 // TextLoop
 export const TextLoop = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
-  fontSize: "32px",
+  fontSize: "34px",
   display: "flex",
-  gap: "12px",
+  gap: "10px",
   color: theme.palette.text.primary,
   lineHeight: "68px",
   "@media (max-width:960px)": {
@@ -148,9 +149,9 @@ export const Span = styled("span")(({ theme }) => ({
 
 // SubTitle
 export const SubTitle = styled(Typography)(({ theme }) => ({
-  fontSize: "20px",
+  fontSize: "22px",
   lineHeight: "32px",
-  marginBottom: "42px",
+  marginBottom: "22px",
   color: theme.palette.text.primary + 95,
   "@media (max-width:960px)": {
     textAlign: "center",

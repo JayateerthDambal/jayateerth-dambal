@@ -1,6 +1,12 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { Navbar, HeroSection, Skills } from "../components";
+import {
+  Navbar,
+  HeroSection,
+  Skills,
+  Education,
+  WorkExperience,
+} from "../components";
 import { motion } from "framer-motion";
 // import { useColorMode } from "../contexts/ColorModeContext";
 // import { useTheme } from "@emotion/react";
@@ -18,7 +24,7 @@ const HomePage = () => {
       transition: {
         type: "spring",
         stiffness: 80,
-        mass: 1,
+        mass: 2,
         damping: 12,
         when: "beforeChildren",
         staggerChildren: 0.1,
@@ -30,8 +36,8 @@ const HomePage = () => {
     return (
       <Box
         sx={{
-          background:
-            "linear-gradient(135deg, hsla(335, 77%, 63%, 1) 0%, hsla(335, 77%, 63%, 1) 20%, hsla(279, 82%, 32%, 1) 100%)",
+          // background:
+          //   "linear-gradient(135deg, hsla(335, 77%, 63%, 1) 0%, hsla(335, 77%, 63%, 1) 20%, hsla(279, 82%, 32%, 1) 100%)",
           width: "100%",
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%)",
         }}
@@ -57,6 +63,8 @@ const HomePage = () => {
             variants={wrapperAnimations}
           >
             <Skills />
+            <Education />
+            <WorkExperience />
           </motion.div>
         </StyledWrapper>
       </Box>

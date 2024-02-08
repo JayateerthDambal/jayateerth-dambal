@@ -5,7 +5,7 @@ const ColorModeContext = createContext();
 export const useColorMode = () => useContext(ColorModeContext);
 
 export const ColorModeProvider = ({ children }) => {
-    const [mode, setMode] = useState('dark');
+    const [mode, setMode] = useState('light');
 
     useEffect(() => {
         const storedMode = localStorage.getItem('colorMode');
