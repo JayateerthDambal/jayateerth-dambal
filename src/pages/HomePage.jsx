@@ -25,7 +25,7 @@ const HomePage = () => {
         type: "spring",
         stiffness: 80,
         mass: 2,
-        damping: 12,
+        damping: 10,
         when: "beforeChildren",
         staggerChildren: 0.1,
       },

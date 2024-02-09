@@ -92,7 +92,7 @@ export const skills = [
             },
             {
                 name: "Firebase",
-                image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
             },
         ],
     },
@@ -101,32 +101,26 @@ export const skills = [
         skills: [
             {
                 name: "AWS",
-                image:
-                    "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
             },
             {
                 name: "Google Cloud",
-                image:
-                    "https://static-00.iconduck.com/assets.00/google-cloud-platform-logo-icon-2048x1824-pg4wzspq.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+
             },
             {
                 name: "Docker",
-                image:
-                    "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg",
+
             },
             {
                 name: "Jenkins",
-                image:
-                    "https://toppng.com/uploads/preview/jenkins-logo-11609365847mufysaivph.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
+
             },
             {
                 name: "Nginx",
-                image: "https://download.logo.wine/logo/Nginx/Nginx-Logo.wine.png",
-            },
-            {
-                name: "Kubernetes",
-                image:
-                    "https://upload.wikimedia.org/wikipedia/commons/0/00/Kubernetes_%28container_engine%29.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg",
             },
         ],
     },
@@ -135,68 +129,77 @@ export const skills = [
         skills: [
             {
                 name: "Python",
-                image:
-                    "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+
             },
             {
                 name: "Tenserflow",
-                image:
-                    "https://static-00.iconduck.com/assets.00/tensorflow-icon-1911x2048-1m2s54vn.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+
             },
             {
                 name: "Keras",
-                image:
-                    "https://miro.medium.com/v2/resize:fit:600/1*DKu_54iqz6C-p6ndo7rO3g.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg",
             },
             {
                 name: "Jupyter",
-                image:
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg",
             },
             {
                 name: "Google Colab",
-                image:
-                    "https://assets.stickpng.com/images/63c2e4c9c4baad4ce22bf9ef.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg",
             },
             {
                 name: "Sk Learn Kit",
-                image:
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/2560px-Scikit_learn_logo_small.svg.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+
+            },
+            {
+                name: "Pandas",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+
+            },
+            {
+                name: "Numpy",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
+
             },
         ],
     },
     {
-        title: "Others",
+        title: "Tools",
         skills: [
             {
-                name: "Git",
-                image:
-                    "https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png",
-            },
-            {
-                name: "GitHub",
-                image:
-                    "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-            },
-            {
-                name: "Netlify",
-                image:
-                    "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-            },
-            {
                 name: "VS Code",
-                image:
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
             },
             {
                 name: "Postman",
-                image:
-                    "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+            },
+            {
+                name: "Git",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+            },
+            {
+                name: "GitHub",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+
+            },
+            {
+                name: "Vercel",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+
+            },
+            {
+                name: "Netlify",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
+
             },
             {
                 name: "Figma",
-                image:
-                    "https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+
             },
         ],
     },
@@ -205,21 +208,20 @@ export const skills = [
 export const experiences = [
     {
         id: 0,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-        role: "Frontend Engineer Intern",
-        company: "Neurobit",
+        img: "https://accomptantinc.com/wp-content/themes/accomptant/img/logo.png",
+        role: "Full Stack Developer",
+        company: "Accomptant",
         date: "June 2023 - Nov 2023",
         desc: "Enhanced user experiences on Neurobit PSG & Hybrid, Portals by resolving bugs & reduced load time by 40%. Built Neurobit Analytics portal using React Js with seamless interaction of REST APIs using AXIOS optimized with React Query. Refactored previous code to TypeScript, updated with new dependency and integrated Vite with Jest for Unit Testing.",
         skills: [
-            "ReactJS",
-            "Redux",
-            "NodeJs",
+            "Python",
+            "Django",
+            "ReactJs",
             "Material UI",
-            "HTML",
-            "CSS",
-            "JavaScript",
+            "Redux",
+            "Postman",
+            "PostgreSQL",
         ],
-        doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
     },
     {
         id: 1,

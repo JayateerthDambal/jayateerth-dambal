@@ -39,14 +39,7 @@ const HeroSection = () => {
   };
 
   return (
-    <Box
-      id="about"
-      sx={
-        {
-          // height: "90vh",
-        }
-      }
-    >
+    <Box id="about" sx={{}}>
       <HeroContainer
         as={motion.div}
         initial="hidden"

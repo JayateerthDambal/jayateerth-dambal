@@ -16,10 +16,12 @@ export const HeroContainer = styled(Box)(({ theme }) => ({
   clipPath: "polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%)",
   zIndex: 1,
   "@media (max-width:960px)": {
+    height: "100vh",
     padding: "66px 16px",
   },
   "@media (max-width:640px)": {
     padding: "32px 16px",
+    height: "100vh",
   },
 }));
 
