@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
@@ -15,13 +15,23 @@ import {
   SubTitle,
   ResumeButton,
 } from "./HeroStyles";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import HeroImg from "../../images/HeroImg.png";
 import { useTheme } from "@emotion/react";
 import HeroBgAnimation from "./HeroBgAnimation";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const HeroSection = () => {
   const theme = useTheme();
+  const [numPages, setNumPages] = useState(null);
+  const [showResume, setShowResume] = useState(false);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
   // Animation variants
   const containerVariants = {
     hidden: { x: -200, opacity: 0 },
@@ -74,9 +84,7 @@ const HeroSection = () => {
             >
               {Bio.description}
             </SubTitle>
-            <ResumeButton href={Bio.resume} target="display">
-              Check Resume
-            </ResumeButton>
+            <Button onClick={() => setShowResume(true)}>Check Resume</Button>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
@@ -90,6 +98,34 @@ const HeroSection = () => {
             />
           </HeroRightContainer>
         </HeroInnerContainer>
+        {showResume && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background: "rgba(0,0,0,0.5)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 10,
+            }} // Style your overlay
+          >
+            <motion.div style={{ background: "white", padding: 20 }}>
+              <button onClick={() => setShowResume(false)}>Close</button>
+              <Document file={Bio.resume} onLoadSuccess={onDocumentLoadSuccess}>
+                {Array.from(new Array(numPages), (el, index) => (
+                  <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+                ))}
+              </Document>
+            </motion.div>
+          </motion.div>
+        )}
       </HeroContainer>
     </Box>
   );

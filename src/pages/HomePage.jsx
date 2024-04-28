@@ -55,6 +55,7 @@ const HomePage = () => {
           pt: 8,
         }}
       >
+        {/* <StarCanv */}
         <HeroSection />
         <StyledWrapper>
           <motion.div

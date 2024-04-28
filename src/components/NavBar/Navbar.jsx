@@ -41,8 +41,7 @@ const Navbar = () => {
     setDrawerOpen(!drawerOpen);
   };
   const appBarStyles = {
-    backgroundColor:
-      theme.palette.mode === "dark" ? "#191919" : "rgba(255, 255, 255, 0.4)",
+    backgroundColor: theme.palette.background,
     backdropFilter: "blur(20px)",
     boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
     color: theme.palette.text.primary,

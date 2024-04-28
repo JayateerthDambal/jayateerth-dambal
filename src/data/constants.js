@@ -10,7 +10,7 @@ export const Bio = {
         "I am a Software Developer & DevOps Engineer | Building Seamless Web & Mobile Solutions with Python, Django, React | Streamlining Deployment & Operations for Agile Development",
     github: "https://github.com/JayateerthDambal",
     resume:
-        "https://docs.google.com/document/d/1HyOv5HnXv8gC__M2A16lv1cYW_0t-WvxWK58EI_Imaw/edit?usp=drive_link",
+        "https://firebasestorage.googleapis.com/v0/b/jayateerth-dambal.appspot.com/o/Jayateerth%20Dambal%20Resume.pdf?alt=media&token=eff826e4-f49a-4dbb-9fc9-41cbb5e32bdc",
     linkedin: "https://www.linkedin.com/in/jayateerth-dambal-755883193/",
     twitter: "https://twitter.com/d_jayateerth",
 };
@@ -313,30 +313,22 @@ export const education = [
     {
         id: 0,
         img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-        school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-        date: "Oct 2021 - Sep 2025",
-        grade: "8.41 CGPA",
-        desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-        degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+        school: "D.K.T.E's Textile And Engineering Institute",
+        date: "Aug 2019 - Jul 2023",
+        grade: "7.56 CGPA",
+        desc: "I pusrused my Bachelor's Degree and Electronics Engineering with no backlogs since first semester. Also gained alot of Computer Science Technologies Knowledge. ",
+        degree: "Bachelor of Technology - BTech, Electroncis Engineering",
     },
     {
         id: 1,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-        school: "Methodist School, Dankuni",
-        date: "Apr 2019 - Apr 2025",
-        grade: "88.2%",
-        desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-        degree: "ISC(XII), Science with Computer",
+        img: "https://instagram.fblr6-2.fna.fbcdn.net/v/t51.2885-19/101253435_183318752993842_6711146498924478464_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fblr6-2.fna.fbcdn.net&_nc_cat=110&_nc_ohc=3jp7AMTEyDEAX9qTeGP&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfCxkEEvdDvayJa_M0QHqbpuuyyRLKEPiZ0U_c1IpPuEwg&oe=66121A33&_nc_sid=8b3546",
+        school: "Kishor Career Point",
+        date: "Feb 2018 - Mar 2019",
+        grade: "71.7%",
+        desc: "I completed my Higher Secondary Education in Science. During this I covered Physics, Chemistry and Maths topics. I exceled in Mathematics",
+        degree: "HSC(XII), Science with Electronics",
     },
-    {
-        id: 2,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-        school: "Methodist School, Dankuni",
-        date: "Apr 2017 - Apr 2019",
-        grade: "92.3%",
-        desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-        degree: "ICSC(X), Science with Computer",
-    },
+
 ];
 
 export const projects = [
