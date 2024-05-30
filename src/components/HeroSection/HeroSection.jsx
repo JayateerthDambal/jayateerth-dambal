@@ -89,7 +89,8 @@ const HeroSection = () => {
 
           <HeroRightContainer id="Right">
             <Img
-              src={HeroImg}
+              // src={HeroImg}
+              src="https://firebasestorage.googleapis.com/v0/b/jayateerth-dambal.appspot.com/o/profile-pic-3.png?alt=media&token=192c10e2-2031-4de4-9512-765b4b1989dc"
               alt="hero-image"
               as={motion.img}
               initial={{ opacity: 0, scale: 0.5 }}

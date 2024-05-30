@@ -1,83 +1,61 @@
 import React from "react";
-import { Box, Avatar } from "@mui/material";
-import { styled } from "@mui/material/styles";
-import {
-  Description,
-  Title,
-  Top,
-  Body,
-  Name,
-  Degree,
-  Date,
-  Grade,
-  Image,
-} from "./EducationStyles";
-import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { Avatar, Typography, Box } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
-const EducationCardContainer = styled(Box)(({ theme }) => ({
-  marginTop: "20px",
-  position: "relative",
-}));
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
 
-const EducationCard = ({ education }) => {
+const EducationCard = ({ education, isLastItem }) => {
   const theme = useTheme();
+
   return (
-    <EducationCardContainer>
-      <VerticalTimelineElement
-        icon={
+    <TimelineItem>
+      <TimelineSeparator>
+        <TimelineDot variant="outlined">
           <Avatar
             sx={{
-              width: "60px",
-              height: "60px",
-              borderRadius: "50%",
-              objectFit: "cover",
-              position: "absolute",
-              // left: 0, // Align to the left
+              width: "40px", // Reduced avatar size for MUI Timeline
+              height: "40px",
             }}
-            alt="education.school"
+            alt={education.school}
             src={education.img}
           />
-        }
-        contentStyle={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "12px",
-          background: "#1d1836",
-          color: "#fff",
-          boxShadow: "rgba(23, 92, 230, 0.15) 0px 4px 24px",
-          backgroundColor:
-            theme.palette.mode === "dark"
-              ? "rgba(17, 25, 40, 0.83)"
-              : "#F4F9F9",
-          border: "1px solid rgba(255, 255, 255, 0.125)",
-          borderRadius: "6px",
-          padding: "10px",
-          marginLeft: "50px", // Adjust as needed
-        }}
-        contentArrowStyle={{
-          borderLeft: "7px solid  rgba(255, 255, 255, 0.3)",
-        }}
-        date={education.date}
-        position="right"
-      >
-        <Top>
-          <Body>
-            <Name>{education.school}</Name>
-            <Degree>{education.degree}</Degree>
-            <Date>{education.date}</Date>
-          </Body>
-          {/* <Image src={education.img} /> */}
-        </Top>
-        <Grade>
-          <b>Grade :</b>
-          {education.grade}
-        </Grade>
-        <Description>
-          <span>{education.desc}</span>
-        </Description>
-      </VerticalTimelineElement>
-    </EducationCardContainer>
+        </TimelineDot>
+        {!isLastItem && <TimelineConnector />} {/* Conditional connector */}
+      </TimelineSeparator>
+      <TimelineContent>
+        <Box
+          sx={{
+            background:
+              theme.palette.mode === "dark"
+                ? "rgba(17, 25, 40, 0.83)"
+                : "#EFFFFD",
+            border: "1px solid rgba(255, 255, 255, 0.125)",
+            borderRadius: "8px",
+            padding: "10px",
+            boxShadow: "0px 0px 48px -7px rgba(205,245,253,1)",
+          }}
+        >
+          <Typography variant="h6" component="div">
+            <b>{education.school}</b>
+          </Typography>
+          <Typography variant="body2">{education.degree}</Typography>
+          <Typography variant="caption" color="textSecondary">
+            {education.date}
+          </Typography>
+
+          <Box sx={{ mt: 1 }}>
+            <Typography variant="body2">
+              <b>Grade:</b> {education.grade}
+            </Typography>
+            <Typography variant="body2">{education.desc}</Typography>
+          </Box>
+        </Box>
+      </TimelineContent>
+    </TimelineItem>
   );
 };
 

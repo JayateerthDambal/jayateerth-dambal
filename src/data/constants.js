@@ -65,6 +65,10 @@ export const skills = [
                     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
             },
             {
+                name: "Go",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+            },
+            {
                 name: "Flask",
                 image:
                     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg",
@@ -312,7 +316,7 @@ export const experiences = [
 export const education = [
     {
         id: 0,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
+        img: "https://firebasestorage.googleapis.com/v0/b/jayateerth-dambal.appspot.com/o/DKTE%20logo.png?alt=media&token=c09e0fb8-6e14-492c-b4b3-09a42acb878b",
         school: "D.K.T.E's Textile And Engineering Institute",
         date: "Aug 2019 - Jul 2023",
         grade: "7.56 CGPA",

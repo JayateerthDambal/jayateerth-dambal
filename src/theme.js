@@ -12,12 +12,12 @@ const darkPalette = {
         default: "#191919",
     },
     primary: {
-        main: "#E95793",
+        main: "#5BBCFF",
     },
     text: {
         primary: "#F2F3F4",
         secondary: "#b1b2b3",
-        span: "#EC53B0"
+        span: "#5BBCFF"
     },
     ...commonStyles,
 };
@@ -29,12 +29,12 @@ const lightPalette = {
         paper: "#f0f0f0",
     },
     primary: {
-        main: "#E95793",
+        main: "#5BBCFF",
     },
     text: {
         primary: "#111111",
         secondary: "#48494a",
-        span: "#EC53B0"
+        span: "#5BBCFF"
     },
     ...commonStyles,
 };
